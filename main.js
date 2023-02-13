@@ -15,4 +15,28 @@ const addBook = () => {
   authorInput.value = '';
 };
 
-const removeBook = (title) => {  bookCollection = bookCollection.filter((book) => book.title !== title);};
+const removeBook = (title) => {
+  bookCollection = bookCollection.filter((book) => book.title !== title);
+};
+
+const displayBooks = () => {
+  if (bookCollection.length === 0) {
+    return;
+  }
+  bookCollection.forEach((book) => {
+    const bookList = getElementById('book-list');
+    const bookContainer = document.createElement('article');
+    const bookTitle = document.createElement('p');
+    const bookAuthor = document.createElement('p');
+    const removeBtn = document.createElement('button');
+    const hr = document.createElement('hr');
+
+    bookList.appendChild(bookContainer);
+    bookContainer.append(bookTitle, bookAuthor, removeBtn, hr);
+    bookTitle.textContent = book.title;
+    bookAuthor.textContent = book.author;
+    removeBtn.innerText = 'Remove';
+
+    removeBtn.addEventListener('click', removeBook(book.title));
+  });
+};
