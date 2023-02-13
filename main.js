@@ -10,21 +10,25 @@ const addBook = () => {
   const newBook = { title, author };
 
   bookCollection.push(newBook);
+  localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
 
   titleInput.value = '';
   authorInput.value = '';
+  displayBooks();
 };
 
 const removeBook = (title) => {
   bookCollection = bookCollection.filter((book) => book.title !== title);
+  localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
+  displayBooks();
 };
 
 const displayBooks = () => {
   if (bookCollection.length === 0) {
     return;
   }
+  const bookList = getElementById('book-list');
   bookCollection.forEach((book) => {
-    const bookList = getElementById('book-list');
     const bookContainer = document.createElement('article');
     const bookTitle = document.createElement('p');
     const bookAuthor = document.createElement('p');
@@ -42,4 +46,9 @@ const displayBooks = () => {
 };
 
 const addbutton = document.getElementById('addButton');
-addbutton.addEventListener('click', addBook )
+addbutton.addEventListener('click', addBook);
+
+window.addEventListener('load', () => {
+  const storedCollection = JSON.parse(localStorage.getItem('bookCollection'));
+  bookCollection.push(...storedCollection);
+});
