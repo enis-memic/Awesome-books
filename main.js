@@ -40,3 +40,6 @@ const displayBooks = () => {
     removeBtn.addEventListener('click', removeBook(book.title));
   });
 };
+
+const addbutton = document.getElementById('addButton');
+addbutton.addEventListener('click', addBook )
