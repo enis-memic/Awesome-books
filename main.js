@@ -14,3 +14,5 @@ const addBook = () => {
   titleInput.value = '';
   authorInput.value = '';
 };
+
+const removeBook = (title) => {  bookCollection = bookCollection.filter((book) => book.title !== title);};
