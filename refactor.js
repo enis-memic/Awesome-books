@@ -1,3 +1,7 @@
+/* eslint-disable no-alert */
+/* eslint-disable comma-dangle */
+/* eslint-disable max-classes-per-file */
+/* eslint-disable no-use-before-define */
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -21,11 +25,13 @@ class ui {
         `;
     list.appendChild(div);
   }
+
   static deletebook(el) {
     if (el.classList.contains('remove-btn')) {
       el.parentElement.remove();
     }
   }
+
   static clearFields() {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
@@ -42,11 +48,13 @@ class store {
     }
     return books;
   }
+
   static addbook(book) {
     const books = store.getbooks();
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
   }
+
   static removebook(title) {
     const books = store.getbooks();
     books.forEach((book, index) => {
