@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/enis-memic/Awesome-books.git"
   },
-  "author": "Zunair and Enis",
+  "keywords": [
+    "\\"
+  ],
+  "author": "Enis and Zunair",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/enis-memic/Awesome-books/issues"
