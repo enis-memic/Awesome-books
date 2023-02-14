@@ -1,9 +1,6 @@
 let bookCollection = [];
 
 const displayBooks = () => {
-  // if (bookCollection.length === 0) {
-  //   return;
-  // }
   const bookList = document.getElementById('book-list');
   bookList.innerHTML = '';
 
