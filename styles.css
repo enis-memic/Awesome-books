@@ -42,7 +42,9 @@ h1 {
 }
 
 #book-addition div p {
-  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 button {

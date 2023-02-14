@@ -19,7 +19,9 @@ class ui {
     const list = document.querySelector('#book-addition');
     const div = document.createElement('div');
     div.innerHTML = `
-        <p>${book.title} by ${book.author}</p>
+        <p>${book.title}</p>
+        <p>by</p>
+        <p>${book.author}</p>
         <Button class="remove-btn">Remove</Button>
         <hr>
         `;
@@ -90,6 +92,6 @@ document.querySelector('#form').addEventListener('submit', (e) => {
 document.querySelector('#book-addition').addEventListener('click', (e) => {
   ui.deletebook(e.target);
   store.removebook(
-    e.target.previousElementSibling.previousElementSibling.textContent
+    e.target.previousElementSibling.previousElementSibling.previousElementSibling.textContent
   );
 });
