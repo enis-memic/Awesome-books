@@ -1,5 +1,106 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
+
+.main-heading {
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+#book-addition {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px auto;
+  margin-top: 20px;
+  position: relative;
+  top: 40px;
+  border: 2px solid black;
+}
+
+#book-addition div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+#book-addition div:nth-of-type(odd) {
+  background-color: antiquewhite;
+}
+
+#book-addition div:nth-of-type(even) {
+  background-color: beige;
+}
+
+#book-addition div p {
+  width: 95%;
+}
+
+button {
+  width: fit-content;
+  border: 1px solid gray;
+  padding: 3px;
+  background-color: aliceblue;
+}
+
+button:hover {
+  border: 1px solid #000;
+  background-color: rgba(255, 235, 205, 0.705);
+  color: #000;
+}
+
+.line {
+  position: relative;
+  top: 30px;
+  width: 20%;
+  background-color: grey;
+  height: 1px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#form {
+  width: 40%;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40px;
+}
+
+#form h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#form #title {
+  width: 80%;
+  display: block;
+  padding: 10px;
+  font-size: 1rem;
+  margin: auto;
+  border: 2px solid #000;
+}
+
+#form #author {
+  width: 80%;
+  display: block;
+  border: 2px solid #000;
+  padding: 10px;
+  font-size: 1rem;
+  margin: auto;
+}
+
+#form-btn {
+  width: 15%;
+  display: block;
+  margin: auto;
+}
