@@ -1,10 +1,8 @@
 <a name="readme-top"></a>
 
-
   <h3><b>Awesome-books</b></h3>
 
 </div>
-
 
 # 📗 Table of Contents
 
@@ -20,9 +18,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-
 # 📖 [Awesome-books] <a name="about-project"></a>
-
 
 **[Awesome-books]** is a project that was given by Microverse to create a book list with adding and removing buttons.
 
@@ -31,16 +27,12 @@
 - javascript
 - html
 
-
 ### Key Features <a name="key-features"></a>
-
 
 - **[Adding book]**
 - **[Removing book]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -48,30 +40,20 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 💻 Getting Started <a name="getting-started"></a>
-
 
 ### Setup
 
 Clone this repository to your desired folder:
-
-
 
 ```sh
   cd my-folder
   git clone git@github.com:enis-memic/Awesome-books.git
 ```
 
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## 👥 Authors <a name="authors"></a>
-
 
 👤 **Author1**
 
@@ -84,15 +66,18 @@ Clone this repository to your desired folder:
 - Twitter: [@zunairkhan811](https://twitter.com/zunairkhan811)
 - LinkedIn: [zunairkhan811](https://linkedin.com/in/zunairkhan811)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **[contact-section]**
+- [ ] **[navigation]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,20 +85,15 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
 If you like this project please give it a ⭐️!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
 
 I would like to thank Microverse for giving us this opportunity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 📝 License <a name="license"></a>
 
