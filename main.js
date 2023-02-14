@@ -15,27 +15,29 @@ const displayBooks = () => {
     bookContainer.append(bookTitle, bookAuthor, removeBtn, hr);
     bookTitle.textContent = book.title;
     bookAuthor.textContent = book.author;
+    removeBtn.setAttribute('id', book.id);
     removeBtn.innerText = 'Remove';
 
-    const removeBook = (title) => {
-      bookCollection = bookCollection.filter((book) => book.title !== title);
+    const removeBook = (id) => {
+      bookCollection = bookCollection.filter((book) => book.id !== id);
       localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
 
       displayBooks();
     };
 
-    removeBtn.addEventListener('click', () => removeBook(book.title));
+    removeBtn.addEventListener('click', () => removeBook(book.id));
   });
 };
 
 const addBook = () => {
   const titleInput = document.getElementById('title-input');
   const authorInput = document.getElementById('author-input');
+  const id = Math.round(Date.now());
 
   const title = titleInput.value;
   const author = authorInput.value;
 
-  const newBook = { title, author };
+  const newBook = { title, author, id };
 
   bookCollection.push(newBook);
   localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
