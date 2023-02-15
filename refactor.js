@@ -23,7 +23,6 @@ class ui {
         <p>by</p>
         <p>${book.author}</p>
         <Button class="remove-btn">Remove</Button>
-        <hr>
         `;
     list.appendChild(div);
   }
