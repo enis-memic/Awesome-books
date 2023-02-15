@@ -91,6 +91,16 @@ document.querySelector('#form').addEventListener('submit', (e) => {
 document.querySelector('#book-addition').addEventListener('click', (e) => {
   ui.deletebook(e.target);
   store.removebook(
-    e.target.previousElementSibling.previousElementSibling.previousElementSibling.textContent
+    e.target.previousElementSibling.previousElementSibling
+      .previousElementSibling.textContent
   );
 });
+
+// current date & time
+const today = new Date();
+const date = `${today.getDate()}-${
+  today.getMonth() + 1
+}-${today.getFullYear()}`;
+const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+const dateTime = `${date}, ${time}`;
+document.getElementById('date').innerHTML = dateTime;

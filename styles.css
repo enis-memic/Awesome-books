@@ -2,46 +2,63 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
-
-.main-heading {
-  margin-top: 30px;
-}
-
 h1 {
   font-size: 50px;
   text-align: center;
 }
-.navbar{
+.navbar {
   display: flex;
   justify-content: center;
 }
 
-.nav-first{
+.nav-first {
   width: 80%;
   display: flex;
   justify-content: space-between;
 }
-.nav-first p{
-      margin: 2px 2px;
-    padding: 2px 2px;
+.nav-first p {
+  margin: 2px 2px;
+  padding: 2px 2px;
 }
-.nav-second{
+.nav-second {
   width: fit-content;
   margin: 2px 2px;
   padding: 2px 2px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.container-time {
+  margin: auto;
+  padding: 1rem 5%;
+  max-height: 100vw;
+  color: #000;
+}
+.date {
+  text-align: end;
+}
+.container {
+  margin: auto;
+  padding: 0 5%;
+  max-height: 100vw;
+  color: #000;
+}
+.book-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+  max-width: 800px;
 }
 
 #book-addition {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 10px auto;
-  margin-top: 20px;
   position: relative;
-  top: 40px;
   border: 2px solid black;
 }
 
@@ -67,7 +84,7 @@ h1 {
   justify-content: space-around;
   width: 100%;
 }
-#book-addition div button{
+#book-addition div button {
   float: right;
 }
 
@@ -84,22 +101,17 @@ button:hover {
   color: #000;
 }
 
-.line {
-  position: relative;
-  top: 30px;
-  width: 20%;
-  background-color: grey;
-  height: 1px;
-  margin: auto;
-  margin-top: 50px;
+.add-books {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
-
 #form {
   width: 40%;
   display: block;
   margin: auto;
   position: relative;
-  top: 40px;
 }
 
 #form h1 {
@@ -129,4 +141,27 @@ button:hover {
   width: 15%;
   display: block;
   margin: auto;
+}
+.contact {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-text {
+  text-align: center;
+  width: 80%;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: #000 2px solid;
+  color: #000;
+  margin-top: 10rem;
 }
