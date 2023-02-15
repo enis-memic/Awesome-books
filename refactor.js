@@ -97,10 +97,13 @@ document.querySelector('#book-addition').addEventListener('click', (e) => {
 });
 
 // current date & time
-const today = new Date();
-const date = `${today.getDate()}-${
-  today.getMonth() + 1
-}-${today.getFullYear()}`;
-const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
-const dateTime = `${date}, ${time}`;
-document.getElementById('date').innerHTML = dateTime;
+const date = document.getElementById('date');
+
+function displayDate() {
+  const date = document.getElementById('date');
+  date.innerHTML = Date();
+
+  setInterval(displayDate, 1000);
+}
+
+displayDate(date);
