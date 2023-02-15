@@ -2,25 +2,91 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.main-heading {
-  margin-top: 30px;
+  text-decoration: none;
+  list-style: none;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
+  color: #323246;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-first {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-right: 2px solid #7676ff;
+}
+
+.nav-first p {
+  color: #7676ff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  margin: 2px 2px;
+  padding: 2px 2px;
+}
+
+.nav-second {
+  width: fit-content;
+  margin: 2px 2px;
+  padding: 2px 2px;
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid #7676ff;
+}
+
+.nav-second p {
+  color: #7676ff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+
+.container-time {
+  margin: auto;
+  padding: 1rem 5%;
+  max-height: 100vw;
+  color: #000;
+}
+
+#date {
+  color: #7676ff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+
+.date {
+  text-align: end;
+}
+
+.container {
+  margin: auto;
+  padding: 0 5%;
+  max-height: 100vw;
+  color: #000;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+  max-width: 800px;
 }
 
 #book-addition {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 10px auto;
-  margin-top: 20px;
   position: relative;
-  top: 40px;
   border: 2px solid black;
 }
 
@@ -41,15 +107,6 @@ h1 {
   background-color: beige;
 }
 
-#book-addition div p {
-  display: inline;
-  justify-content: space-around;
-  width: 100%;
-}
-#book-addition div button{
-  float: right;
-}
-
 button {
   width: fit-content;
   border: 1px solid gray;
@@ -63,14 +120,15 @@ button:hover {
   color: #000;
 }
 
-.line {
-  position: relative;
-  top: 30px;
-  width: 20%;
-  background-color: grey;
-  height: 1px;
-  margin: auto;
-  margin-top: 50px;
+#book-addition div button {
+  float: right;
+}
+
+.add-books {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 #form {
@@ -78,10 +136,18 @@ button:hover {
   display: block;
   margin: auto;
   position: relative;
-  top: 40px;
+}
+
+.contact h1 {
+  color: #323246;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 
 #form h1 {
+  color: #323246;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -108,4 +174,78 @@ button:hover {
   width: 15%;
   display: block;
   margin: auto;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-text {
+  text-align: center;
+  width: 80%;
+}
+
+.contact-text h2 {
+  color: #323246;
+  font-family: 'roboto', sans-serif;
+}
+
+.contact-text h3 {
+  color: #323246;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+
+.contact-text ul li {
+  color: #323246;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.contact-text ul li a {
+  color: #ae0bf1;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-first p a:hover {
+  color: #7676ff;
+}
+
+.nav-second p a:hover {
+  color: #7676ff;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: #000 2px solid;
+  color: #000;
+  margin-top: 10rem;
+}
+
+.footer p {
+  color: #323246;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+
+#book-addition div p {
+  display: inline;
+  justify-content: space-around;
+  width: 100%;
+  color: #323246;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
 }
